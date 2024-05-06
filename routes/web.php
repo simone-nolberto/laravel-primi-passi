@@ -18,9 +18,13 @@ Route::get('/', function () {
     
     $data = [
 
+        'name' => 'Simone',
+        'lastname' => 'Nolberto',
+        'job' => 'full stack web developer'
+        
     ];
 
-    return view('home');
+    return view('home', $data);
 
 
 });

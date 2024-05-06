@@ -18,6 +18,9 @@
 
     <h1>Hello World</h1>
 
+    <p>My name is {{$name}} {{$lastname}}</p>
+    <p>I'm studying to become a {{$job}}</p>
+
 </body>
 
 </html>
