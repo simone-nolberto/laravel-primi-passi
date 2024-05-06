@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Hello World</title>
+    <title>My contacts</title>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
@@ -18,8 +18,14 @@
 
     <h1>Hello World</h1>
 
-    <p>My name is {{$name}} {{$lastname}}</p>
-    <p>I'm studying to become a {{$job}}</p>
+    <p>If you want to get in touch with me, these are my contacts</p>
+    <ul>
+        @foreach ($contacts as $contact)
+        <li>
+            {{$contact}}
+        </li>
+        @endforeach
+    </ul>
 
 </body>
 
